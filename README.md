@@ -1,3 +1,3 @@
 # My Website
 
-**View here:  Comming soon!**
+**View here:  [https://aihubei.github.io](https://aihubei.github.io/)**
