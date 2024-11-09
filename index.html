@@ -1,746 +1,595 @@
-<!-- <!DOCTYPE html> -->
-<html lang="ch">
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+	<!--网页标题-->
+    <title>AIHUBEI - Data Science & Machine Learning</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
-  <!-- End Google Tag Manager -->
+    <link rel="stylesheet" href="css/aos.css">
 
-  <!-- Materialize - Compiled and minified CSS-->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-  <!-- Font Awesome Icon - CSS-->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-  <!-- Custom Styles-->
-  <link rel="stylesheet" href="/assets/css/style.css" />
-  <title>Yao Xiao | Machine Learning Practitioner</title>
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Xiao Xiao</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+	
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#career-section" class="nav-link"><span>Career</span></a></li>
+					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#competitions-section" class="nav-link"><span>Competitions</span></a></li>
+					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<script>
+	  document.addEventListener('DOMContentLoaded', function () {
+		const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+		const navbarCollapse = document.getElementById('ftco-nav');
+		
+		navLinks.forEach(link => {
+		  link.addEventListener('click', function () {
+			navbarCollapse.classList.remove('show');
+		  });
+		});
+	  });
+	</script>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	      <div class="slider-item ">
+	      	<div class="overlay"></div>
+	        <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<!--头像avatar-->
+				<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/avatar.png); background-size: 425px 425px; background-position: 80% 35%;">
+	          		<div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+						<!--Hello部分-->
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>AIHUBEI</span></h1>
+			            <h2 class="mb-4">I have expertise in machine learning, data processing, and optimizing data workflows.</h2>
+			            <p><a href="#contact-section" class="btn btn-primary py-3 px-4">contact</a> <a href="#career-section" class="btn btn-white btn-outline-white py-3 px-4">career</a> <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">projects</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+	      <div class="slider-item">
+	      	<div class="overlay"></div>
+	        <div class="container">
+	          <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+				<!--kaggle头像-->
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/kaggle-profile-pic.png); background-size: 425px 425px; background-position: 80% 35%;">
+	          		<div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I <span>love</span> to work with data,</h1>
+						<h2 class="mb-4">turning complex information into actionable insights and innovative solutions.</h2>
+			            <p><a href="#contact-section" class="btn btn-primary py-3 px-4">contact</a> <a href="#career-section" class="btn btn-white btn-outline-white py-3 px-4">career</a> <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">projects</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+	    </div>
+    </section>
 
-    gtag('config', 'UA-126939217-2');
-  </script>
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+    		<div class="row d-flex">
+    			<div class="col-md-6 col-lg-5 d-flex">
+    				<div class="img-about img d-flex align-items-stretch">
+    					<div class="overlay"></div>
+						<!--关于我-->
+	    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/avatar.png); background-size: 400px 400px; background-position: 80% 35%;">
+	    				</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+    				<div class="row justify-content-start pb-3">
+		          <div class="col-md-12 heading-section ftco-animate">
+		          	<h1 class="big">About</h1>
+		            <h2 class="mb-4">About Me</h2>
+					<p style="color: #ffffff;">I’m a data engineer and scientist with experience in managing projects, building machine learning models, and designing real-time dashboards. I enjoy analyzing data and creating systems that improve business performance.</p>
+					<p style="color: #ffffff;">I’ve applied my skills in various arenas, from manufacturing to machine learning competitions. Whether it’s blending predictions using my custom hill-climbing algorithm or streamlining data pipelines, I’m always excited to find the story hidden in the data.</p>
+					<p style="color: #fcad68;">Let’s connect and explore the ways I can contribute to your team!</p>
+		            <ul class="about-info mt-4 px-md-0 px-2">
+		            	<li class="d-flex"><span>Location:</span> <span>BeiJing, BeiJing, China</span></li>
+		            	<li class="d-flex"><span>Email:</span> <span>yx.cs4um@gmail.com</span></li>
+		            	<li class="d-flex"><span>Phone: </span> <span>+86 199-7175-****</span></li>
+						<li class="d-flex">
+							<!--社交媒体-->
+							<a href="https://www.linkedin.com">
+								<span class="icon-long-arrow-right mr-2"></span>LinkedIn&nbsp;&nbsp;&nbsp;
+							</a>
+							<a href="https://www.kaggle.com/AIHUBEI">
+								<span class="icon-long-arrow-right mr-2"></span>Kaggle&nbsp;&nbsp;&nbsp;
+							</a>
+							<a href="https://github.com/AIHUBEI">
+								<span class="icon-long-arrow-right mr-2"></span>GitHub&nbsp;&nbsp;&nbsp;
+							</a>
+							<a href="https://www.youtube.com/@yaoxiao-d9l">
+								<span class="icon-long-arrow-right mr-2"></span>YouTube
+							</a>
+						</li>
+		            </ul>
+		          </div>
+		        </div>
+              </div>
+	          </div>
+	        </div>
+        </div>
+    	</div>
+    </section>
 
-  <!-- Open Graph-->
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Varad Bhogayata | Software Developer" />
-  <meta property="og:description" content="Software Developer" />
-  <meta property="og:url" content="https://yaoxiao-cs.github.io/" />
-  <meta property="og:site_name" content="Yao Xiao | Machine Learning Practitioner" />
-  <meta property="article:publisher" content="https://yaoxiao-cs.github.io/" />
-  <meta property="og:image" content="https://varadbhogayata.github.io/examples/preview.JPG" />
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@varad_bhogayata" />
-  <meta name="twitter:title" content="Coder | Technofreak | Explorer | Minimalist | Humane" />
-  <meta name="twitter:description" content="Software Developer" />
-  <meta name="twitter:url" content="https://twitter.com/varad_bhogayata" />
-  <meta name="author" content="Varad Bhogayata" />
-  <meta name="description" content="Software Developer with a passion for backend development and artificial intelligence." />
-  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-icon-192x192.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="/assets/img/favicon/manifest.json" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff" />
-  <meta name="robots" content="index, follow" />
-  <!-- Google Site Verification for indexing -->
-  <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
-</head>
+    <section class="ftco-section ftco-no-pb" id="career-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+			<!--职业-->
+          	<h1 class="big big-2">Career</h1>
+            <h2 class="mb-4">Career</h2>
+            <p style="color: #ffffff;">My work has included large-scale project management, Python module development for machine learning/data analysis, and high-level Kaggle competitions. I bring both technical skills and a problem-solving mindset to every project I work on.</p>
+          </div>
+        </div>
+    		<div class="row">
+    			<div class="col-md-6">
+					<!--四段工作经历-->
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">05/2023 – 04/2024</span>
+    					<h2>Application / Data Engineer</h2>
+    					<span class="position">iNOEX, Lancaster, PA</span>
+    					<p class="mt-4" style="color: #ffffff;">I led the iDM 4.0 project (iNOEX Data Management), building machine learning models, real-time dashboards, and automated reporting for global manufacturers, while ensuring seamless data integration and client support.</p>
+    				</div>
+					<div class="resume-wrap ftco-animate">
+    					<span class="date">01/2020 – 01/2022</span>
+    					<h2>Machinist</h2>
+    					<span class="position">Acero Precision, West Chester, PA</span>
+    					<p class="mt-4" style="color: #ffffff;">At Acero Precision, I sharpened my problem-solving skills by programming CNC machines and optimizing tool paths for surgical medical parts, building the technical precision I now bring to data engineering and machine learning.</p>
+    				</div>
+    			</div>
 
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
+    			<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+    					<span class="date">05/2022 – Present</span>
+    					<h2>Kaggle Master</h2>
+    					<span class="position">Kaggle</span>
+    					<p class="mt-4" style="color: #ffffff;">As an experienced participant on Kaggle, Google’s data science platform, I’ve uploaded custom datasets, shared code showcasing my data analysis, and developed machine learning models to compete in various challenges.</p>
+    				</div>
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">08/2017 – 11/2019</span>
+    					<h2>Cofounder</h2>
+    					<span class="position">Active Impulse, Scottsdale, AZ</span>
+    					<p class="mt-4" style="color: #ffffff;">Active Impulse, an e-commerce platform for Polaris vehicle parts, was my first entrepreneurial challenge. I wore many hats as the business grew: database design, front-end development, and optimizing data handling and inventory.</p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+	<section class="ftco-section" id="projects-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-10 heading-section text-center ftco-animate">
+				<!--项目情况-->
+			  <h1 class="big big-2">Projects</h1>
+			  <h2 class="mb-4">Personal Projects</h2>
+			  <p style="color: #ffffff;">In my quest for efficiency, I’ve developed tools and solutions for data analysis and machine learning. I've had a great deal of fun and gained valuable knowledge doing these. This collection of projects demonstrates my dedication to continuously improving my skills.</p>
+			</div>
+		  </div>
+		  <div class="row d-flex">
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Matt-OP/fasteda" class="block-20" style="background-image: url('images/fasteda.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+					<div class="d-flex align-items-center mb-3 meta">
+					  <p class="mb-0">
+						  <span class="mr-2">December 5th, 2022</span> 
+					  </p>
+				  </div>
+				  <h3 class="heading"><a href="https://github.com/Matt-OP/fasteda">fasteda: A Way to Accelerate My Exploratory Data Analysis</a></h3>
+				  <p>I built fasteda, a Python module for rapid exploratory data analysis of DataFrames. It offers key statistics, correlation plots, and visualizations like histograms and pairplots, with enhanced support for binary classification datasets.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Matt-OP/hillclimbers" class="block-20" style="background-image: url('images/hillclimb.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+					<div class="d-flex align-items-center mb-3 meta">
+					  <p class="mb-0">
+						  <span class="mr-2">April 13th, 2023</span>
+					  </p>
+				  </div>
+				  <h3 class="heading"><a href="https://github.com/Matt-OP/hillclimbers">hillclimbers: An Adaptable Hill Climbing Algorithm</a></h3>
+				  <p>hillclimbers is a Python module I developed that blends machine learning model predictions using hill climbing to optimize performance. It selects diverse models and adjusts weights to improve the desired evaluation metric, and helped me achieve two 4th place finishes in Kaggle competitions.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry">
+				<a href="https://www.youtube.com/watch?v=Sm49VCSwjgM" class="block-20" style="background-image: url('images/geoguessr-youtube-thumbnail-no-markers.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+					<div class="d-flex align-items-center mb-3 meta">
+					  <p class="mb-0">
+						  <span class="mr-2">September 12th, 2024</span>
+					  </p>
+				  </div>
+				  <h3 class="heading"><a href="https://www.youtube.com/watch?v=Sm49VCSwjgM">How I Created the Largest Geoguessr Dataset in the World</a></h3>
+				  <p>Geoguessr is a game where you are dropped into google street view in a random part of the world and your objective is to guess exactly where you are. Check out my YouTube video where I demonstrate how I used the Geoguessr API to build this dataset, perform analysis, and create visualizations.</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+
+	  <section class="ftco-section ftco-project" id="competitions-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<!--竞赛-->
+					<h1 class="big big-2">Competitions</h1>
+					<h2 class="mb-4">Competitions</h2>
+					<p style="color: #ffffff;">I’ve achieved top rankings in various machine learning competitions, including high placements in regression, classification, and feature imputation tasks. These contests have covered a wide range of topics, such as predicting region flooding, wild blueberry yield, academic risk of students, the probability of an instance being a highly magnetized rotating neutron star, feature imputation in a heat flux dataset, and employee attrition.</p>
+					<p style="color: #fcad68;"><b>Hover over and click through the pictures below to view solution details.</b></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<a href="https://www.kaggle.com/competitions/playground-series-s4e5/discussion/509044" class="project-link">
+						<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/flood-contest.png);">
+							<div class="overlay"></div>
+							<div class="text text-center p-4">
+								<h3>Predict the probability of a region flooding</h3>
+								<span>Placed 4th of 7,193 entrants</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-8">
+					<a href="https://www.kaggle.com/competitions/playground-series-s3e14/discussion/410639" class="project-link">
+						<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/blueberries-contest.jpeg);">
+							<div class="overlay"></div>
+							<div class="text text-center p-4">
+								<h3>Use regression to predict the yield of wild blueberries</h3>
+								<span>Placed 4th of 4,197 entrants</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-8">
+					<a href="https://www.kaggle.com/competitions/playground-series-s4e6/discussion/515989" class="project-link">
+						<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/academic-success-contest.jpg);">
+							<div class="overlay"></div>
+							<div class="text text-center p-4">
+								<h3>Predict academic risk of students in higher education</h3>
+								<span>Placed 6th of 7,152 entrants</span>
+							</div>
+						</div>
+					</a>
+					<a href="https://www.kaggle.com/competitions/playground-series-s3e15/discussion/413749" class="project-link">
+						<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/heat-flux-contest.png);">
+							<div class="overlay"></div>
+							<div class="text text-center p-4">
+								<h3>Predict the missing values of the feature x_e_out [-] in a heat flux dataset</h3>
+								<span>Placed 6th of 2,077 entrants</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-md-12">
+							<a href="https://www.kaggle.com/competitions/playground-series-s3e10/discussion/396425" class="project-link">
+								<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/pulsar-contest.jpeg);">
+									<div class="overlay"></div>
+									<div class="text text-center p-4">
+										<h3>Predict if an instance is a highly magnetized rotating neutron star</h3>
+										<span>Placed 8th of 1,869 entrants</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-12">
+							<a href="https://www.kaggle.com/competitions/playground-series-s3e3/discussion/380757" class="project-link">
+								<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/ibm-contest.png);">
+									<div class="overlay"></div>
+									<div class="text text-center p-4">
+										<h3>Predict the probability of employee attrition</h3>
+										<span>Placed 14th of 1,577 entrants</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Kaggle状态-->
+    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+    	<div class="container">
+				<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="38">0</strong>
+                <span>Completed Competitions</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="88">0</strong>
+                <span>Datasets Created</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="118">0</strong>
+                <span>Jupyter Notebooks</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1680">0</strong>
+                <span>Discussion Contributions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/mhill-profile.jpg); background-size: 0% 0px;">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-10 ftco-animate text-center">
+						<h3><b>My Kaggle Stats</b></h3>
+						<h5>My Kaggle statistics reflect my active engagement in the community and my commitment to collaboration and knowledge sharing on Google's data science platform.</h5>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--技能-->
+    <section class="ftco-section" id="skills-section">
+    	<div class="container">
+    		<div class="row justify-content-center py-5 mt-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Skills</h1>
+            <h2 class="mb-4">Skills</h2>
+            <p style="color: #ffffff;">These are the skills I have developed the most expertise in for working with data in a diverse set of contexts.</p>
+          </div>
+        </div>
+    		<div class="row">
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a class="services-1">
+							<span class="icon">
+								<i class="flaticon-analysis"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Data Analysis</h3>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a class="services-1">
+							<span class="icon">
+								<i class="flaticon-flasks"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Python</h3>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a class="services-1">
+							<span class="icon">
+								<i class="flaticon-ideas"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Machine learning</h3>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a class="services-1">
+							<span class="icon">
+								<i class="flaticon-analysis"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Data Cleaning</h3>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a class="services-1">
+							<span class="icon">
+								<i class="flaticon-flasks"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">SQL</h3>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a class="services-1">
+							<span class="icon">
+								<i class="flaticon-ideas"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Computer Vision</h3>
+							</div>
+						</a>
+					</div>
+				</div>
+    	</div>
+    </section>
+		<!--联系方式-->
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p style="color: #ffffff;">I’m actively seeking opportunities in data analysis, data engineering, or machine learning. If you're looking for someone who can bring strong analytical skills and technical expertise to your team, feel free to reach out!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+					</div>
+				</div>
+			</div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p>+86 199-7175-****</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:yx.cs4um@gmail.com">yx.cs4um@gmail.com</a></p>
+	          </div>
+          </div>
+        </div>
+    </section>
+
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+				<!--底部导航栏-->
+              <h2 class="ftco-heading-2">About</h2>
+              <p>I’m a data engineer and scientist with a passion for turning complex data into actionable insights. Let’s connect and see how I can contribute to your team!</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Navigation</h2>
+              <ul class="list-unstyled">
+                <li><a href="#home-section"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+                <li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+                <li><a href="#career-section"><span class="icon-long-arrow-right mr-2"></span>Career</a></li>
+                <li><a href="#projects-section"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
+				<li><a href="#competitions-section"><span class="icon-long-arrow-right mr-2"></span>Competitions</a></li>
+				<li><a href="#skills-section"><span class="icon-long-arrow-right mr-2"></span>Skills</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">My Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="https://www.linkedin.com"><span class="icon-long-arrow-right mr-2"></span>LinkedIn</a></li>
+                <li><a href="https://www.kaggle.com/AIHUBEI"><span class="icon-long-arrow-right mr-2"></span>Kaggle Profile</a></li>
+                <li><a href="https://github.com/AIHUBEI"><span class="icon-long-arrow-right mr-2"></span>GitHub Profile</a></li>
+				<li><a href="https://www.youtube.com/@yaoxiao-d9l"><span class="icon-long-arrow-right mr-2"></span>YouTube Channel</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Contact</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-phone"></span><span class="text">+86 199-7175-****</span></li>
+	                <li><span class="icon icon-envelope"></span><span class="text">yx.cs4um@gmail.com</span></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <!--div class="row">
+          <div class="col-md-12 text-center">
+            <p style="color: white;">
+  				Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by Colorlib
+  			</p>
+          </div>
+        </div>-->
+		<div class="row" style="margin: 0; bottom: 0; left: 0; right: 0; background-color: black; color: white; padding: 10px 0; display: flex; justify-content: center;align-items: center;">
+			<div class="col-md-12 text-center">
+				<p style="color: white; margin: 0;">
+					Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by Colorlib
+				</p>
+			</div>
+		</div>
+		
+      </div>
+    </footer>
+    
   
-  <!-- Navigation Menu-->
-  <!-- Nav class 1 -->
-  <nav class="hide-on-small-only">
-    <ul class="side-nav fixed section table-of-contents">
 
-      <li class="logo">
-        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-          class="brand-logo grey-blue-text">
-          <img src="/assets/img/(remove-background.net).png" class="circle img-responsive profile-pic" alt="avatar">
-        </a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-
-      <li class="bold">
-        <!-- mdi-av-web small
-             mdi-av-my-library-books small-->
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        mdi-action-assessment
-        mdi-social-poll
-        mdi-av-equalizer
-        -->
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-      
-      <li class="bold">
-        <!--
-        ICONS:
-        -->
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-
-      <li class="bold">
-        <!-- 
-        1. mdi-communication-contacts
-        2. mdi-content-mail
-        3. mdi-communication-email
-        -->
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        1. mdi-action-description
-        2. mdi-file-folder
-        3. mdi-file-folder-open
-        4. mdi-file-attachment
-        5. mdi-file-folder-shared
-        -->
-        <!-- <a aria-label="Open Varad's resume in a new tab" href="#resume" target="_blank"
-          onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
-        <a aria-label="Open Varad's resume in a new tab" href="https://aihubei.github.io/CV/index.html" target="_blank"
-        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Nav class 2 -->
-  <nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">xiao yao</a><span class="black-text">Data Science and Machine Learning Practitioner</span>
-    </div>
-  </nav>
-
-  <!-- Nav class 3 -->
-  <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Open Varad's Resume in a new tab"
-          href="https://drive.google.com/file/d/1B6MZ1z0-7NsefC3Lm_q-uhib28MTqpE9/view?usp=sharing" target="_blank"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Main Content-->
-  <main>
-    <!-- First Section: Heading lines and image -->
-    <section id="intro" class="section scrollspy full-height">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-            <div class="caption">
-              <h2>Hi, I'm <span class="teal">xiao yao.</span></h2>
-              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
-              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-              <h5>Self-driven, quick starter, passionate machine learning Practitioner with a curious mind who enjoys solving a complex and challenging real-world problems.</h5>
-            </div>
-            <div class="social">
-              <a href="https://x.com/xiaoyao65391263" target="_blank">
-                <button class="icon-btn twitter">
-                  <i class="fa fa-twitter"></i>
-                </button>
-              </a>
-
-              <a href="https://weibo.com/u/7771535512" target="_blank">
-                <button class="icon-btn weibo">
-                  <i class="fa fa-weibo"></i>
-                </button>
-              </a>
-              
-              <a href="https://stackoverflow.com/users/16867477/yao-xiao" target="_blank">
-                <button class="icon-btn stackoverflow">
-                  <i class="fa fa-stack-overflow"></i>
-                </button>
-              </a>
-
-              <a href="https://github.com/yaoxiao-cs/" target="_blank">
-                <button class="icon-btn github">
-                  <i class="fa fa-github"></i>
-                </button>
-              </a>
-
-              <!-- <a href="https://angel.co/u/varad_bhogayata" target="_blank">
-                <button class="icon-btn angellist">
-                  <i class="fa fa-angellist"></i>
-                </button>
-              </a> -->
-
-              <!-- <a href="http://linkedin.com/in/varadbhogayata" target="_blank">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-
-                  </span>
-              </a> -->
-            </div>
-            <div class='buttons'>
-              <a href="#about" class="readme">Read More</a>
-              <a href="#contact" class="contactme">Contact Me</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Second Section: About -->
-    <section id="about" class="section scrollspy">
-      <h3 class="page-title white-text teal">About</h3>
-      <div class="container flow-text">
-        <!-- <blockquote>
-          <h2>
-            A Software Developer with a passion for Backend Development and Artificial Intelligence.
-
-          </h2>
-        </blockquote> -->        
-        <p style="text-align:justify";>
-        我叫肖垚，1996年10月生于湖北十堰。自2021年7月至今，我工作于<a href="https://www.sneb.com.cn/index_jszx.html">中交第二航务工程局有限公司技术中心</a>，并在智能建造技术部担任中级工程师。我的主要职责是基于各类传感器监测数据与图像数据进行机器学习与计算机视觉建模，并结合可解释性机器学习技术提升模型的可靠性，从而辅助工程决策。同时，我也参与或负责部门科研课题的研发，包括各种工作报告、技术报告与汇报PPT的撰写。
-        </p>
-        <p style="text-align:justify";>
-        在此之前，我于2015年9月就读于南昌理工学院，并于2019年7月获得软件工程专业本科学士学位。同年9月就读于中南财经政法大学信息系，并有幸在杨怡光教授的指导下，与2021年6月获得计算机技术工程硕士学位。
-        </p>
-        <p style="text-align:justify";>
-        我的研究兴趣主要包括：数据分析与处理、机器学习、可解释性机器学习以及计算机视觉。您可以在这里找到<a href="https://yaoxiao-cs.github.io/CV/index.html"><strong>我的个人简历</strong></a>。
-        </p>
-          
-        <!-- <p>
-          
-          Detail-oriented Software Developer with professional experience in Backend Development, Machine Learning, Computer Vision. I am adept in Python, Django, Flask, SQL, Machine Learning, Computer Vision.           
-        </p> -->
-        <p style="text-align: justify;">
-        我目前正在寻找关于数据分析与挖掘、机器学习等相关工作岗位。
-        </p>
-        <!-- <p>
-          Another Paragraph
-        </p>  -->
-        <!-- <p>
-        <strong>Current Focus</strong>:&nbsp;<a aria-label="Navigate to the Inclusive Design Patterns homepage"
-          href="https://www.smashingmagazine.com/inclusive-design-patterns/">Accessibility</a>&nbsp;//&nbsp;<a
-          aria-label="Navigate to the Full Stack React homepage"
-          href="https://www.fullstackreact.com/">React</a>&nbsp;//&nbsp;<a
-          aria-label='Navigate to the article "Scalable CSS"'
-          href="https://mrmrs.github.io/writing/2016/03/24/scalable-css/">Design Systems</a>
-        </p> -->
-      </div>
-    </section>
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
-    <!-- Third Section: Experience -->
-    <section id="experience" class="section scrollspy">
-      <h3 class="page-title white-text teal">Experience</h3>
-      <div class="container">
-
-        <!-- Latest Experience -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://www.sneb.com.cn/index_jszx.html" target="_blank"><img alt="Zhiffy logo"
-                    src="/assets/img/experience/zhongjiao.png" class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://www.sneb.com.cn/index_jszx.html" target="_blank"
-                      class="teal-text hoverline">中交第二航务工程局有限公司技术中心</a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">中级工程师</div>
-            <ul>
-              <li>
-              对各类结构化的传感器监测数据与非结构化图像数据进行数据预处理和清洗、数据可视化与数据增强；
-              </li>
-              <li>
-              利用机器学习与计算机视觉技术构建预测模型，并基于可解释性机器学习技术提升黑箱模型的可靠性，从而辅助工程决策；
-              </li>
-              <li>
-              通过模型持久化与Docker容器技术，将训练得到的机器学习模型部署形成API接口，提供给系统开发团队；
-              </li>
-              <li>
-              通过网络爬虫、文本清洗、Word/PDF文档表格解析与数据库技术，构建面向施工的标准规范数据库，服务于方案编制部门；
-              </li>
-              <li>
-              撰写研发项目技术报告、工作报告、接口文档与汇报PPT等材料。
-              </li>
-              <li>
-                <b>Tools:</b> Python, OpenCV, sklearn, PyTorch, Camelot, pdfplumber, Python-docx, MySQL, Docker, Postman, Beautiful Soup
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>July 2021 - Today | 武汉, 湖北</span>
-          </div>
-        </div>
-
-
-      </div>
-    </section>
-
-    <!-- Fourth Section: Projects -->
-    <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Projects</h3>
-      <div class="container">
-        <div class="row">
-
-          <!--项目1-->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="多模型融合的高性能混凝土抗压强度预测" src="/assets/img/projects/90.jpg" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">高性能混凝土抗压强度预测<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  利用多模型融合方法预测高性能混凝土抗压强度
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>数据清洗：包括异常值、重复值、缺失值的处理；</li>
-                  <li>探索分析：相关性热力图、散点图矩阵、统计描述等；</li>
-                  <li>特征工程：对数变换、特征构造等；</li>
-                  <li>模型构建：线性回归、决策树、随机森林、CatBoost、模型加权融合；</li>
-                  <li>调参评估：网格搜索、R2最高达到0.95；</li>
-                  <p>
-                  </p>
-                  <li><b>Tools: </b>sklearn, matplotlib, 集成学习</li>
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://nbviewer.org/github/YaoXiao-CS/Work-Project-Collection/blob/main/ML-%E5%88%A9%E7%94%A8%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E9%A2%84%E6%B5%8B%E6%B7%B7%E5%87%9D%E5%9C%9F%E6%8A%97%E5%8E%8B%E5%BC%BA%E5%BA%A6/cement-strength-eda-and-prediction.ipynb" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/YaoXiao-CS/Work-Project-Collection/tree/main/ML-%E5%88%A9%E7%94%A8%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E9%A2%84%E6%B5%8B%E6%B7%B7%E5%87%9D%E5%9C%9F%E6%8A%97%E5%8E%8B%E5%BC%BA%E5%BA%A6"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--项目2-->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="机器学习API" src="/assets/img/projects/model-deployment.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">抗压强度预测API<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  利用FastAPI与Docker将预测模型部署形成API
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>模型持久化：利用pickle对训练好的预测模型进行导出与加载；</li>
-                  <li>定义Web请求：利用FastAPI框架，初始化APP并定义请求数据样式；</li>
-                  <li>Docker容器化：利用postman测试通过post请求后，打包为Docker镜像；</li>
-                  <p>
-                  </p>
-                  <li><b>Tools: </b>FastAPI, Docker, postman</li>
-                </ul>
-
-
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://blog.csdn.net/AIHUBEI/article/details/143086226?spm=1001.2014.3001.5502" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/YaoXiao-CS/Work-Project-Collection/tree/main/ML-%E5%88%A9%E7%94%A8Docker%E4%B8%8EFastAPI%E9%83%A8%E7%BD%B2%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%A8%A1%E5%9E%8B"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- ************* -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Fifth Section: Skills -->
-    <section id="skills" class="section scrollspy">
-      <h3 class="page-title white-text teal">Skills</h3>
-      <div class="container">
-        <!-- Languages and Databases -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Languages and Databases</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/python-logo-1-300x300.jpg" class="responsive-img" />Python
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/git.png" class="responsive-img" />Git
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/shell-logo-1-300x300.jpg" class="responsive-img" />Shell Scripting
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/markdown.png" class="responsive-img" />Markdown
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/mysql-logo-1-300x300.jpg" class="responsive-img" />MySQL
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/mango-favicon.png" class="responsive-img" />MangoDB
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Libraries</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/library/sk-learn-logo-1-500x500.jpg" class="responsive-img" />scikit-learn
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/library/opencv.png" class="responsive-img" />OpenCV
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/library/albumentations-logo.png" class="responsive-img" />albumentations
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/library/roboflow-app.png" class="responsive-img" />roboflow
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/library/numpy-logo-1-500x500.jpg" class="responsive-img" />NumPy
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/library/pandas-logo-2-500x500.jpg" class="responsive-img" />Pandas
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/library/matplotlib-logo-1-500x500.jpg" class="responsive-img" />matplotlib
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Frameworks -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Frameworks</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/frameworks/pytorch-logo.png" class="responsive-img" />PyTorch
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/frameworks/tensorflow-logo-1.png" class="responsive-img" />TensorFlow
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/frameworks/keras-logo.png" class="responsive-img" />Keras
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/skills/frameworks/streamlit-logo.png" class="responsive-img" />Streamlit
-              </div>
-              
-            </div>
-          </div>
-        </div>
-
-        <!-- Other -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Other</h4>
-            <div class="row text-center">
-
-
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/other/vscode.png" class="responsive-img" />VsCode
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/other/linux-os.png" class="responsive-img" />Linux
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/other/Xshell.png" class="responsive-img" />Xshell
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/other/tableau.png" class="responsive-img" />Tableau
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/other/docker-favicon.png" class="responsive-img" />Docker
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/other/stackoverflow-1024.png" class="responsive-img" />stackoverflow
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- certifications -->
-        <!-- <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Certificates</h4>
-            <div class="row text-left">
-              <div class="container">
-                <div class="row">
-                  <div class="col s12 m6 l6">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="/assets/img/mooc-machine-learning-coursera-800x500.jpg">
-                      </div>
-                      <div class="card-content">
-                        <span class="card-title teal-text">Machine Learning (Stanford)</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col s12 m6 l6">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="/assets/img/mooc-algorithms-stanford-2-800x500.jpg">
-                      </div>
-                      <div class="card-content">
-                        <span class="card-title teal-text">Algorithms (Stanford)</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-      </div>
-    </section>
-
-    <!-- Seventh Section: Education -->
-    <section id="education" class="section scrollspy">
-      <h3 class="page-title white-text teal">Education</h3>
-      <div class="container">
-        <div class="row">
-          <!-- Education -->
-          <div class="col s12 m6 l6">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://www.zuel.edu.cn/" target="_blank" class="teal-text hoverline">中南财经政法大学</a></span>
-                </p>
-                <p class="brown-text">武汉, 湖北</p>
-                <p>
-                  <b>专业-学位: </b>计算机技术-工程硕士      
-                  <br>
-                  <b>CGPA: </b>3.5/4.0
-                </p>
-
-                <ul>
-                  <p>
-                    <b>相关课程:</b>
-                  <ul>
-                    <li>数据挖掘</li>
-                    <li>数据库</li>
-                    <li>金融安全工程</li>                    
-                  </ul>
-                  </p>
-
-                </ul>
-              </div>
-            </div>
-
-            
-          </div>
-          <div class="col s12 m6 l6">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://www.nut.edu.cn/" target="_blank" class="teal-text hoverline">南昌理工学院</a></span>
-                </p>
-                <p class="brown-text">南昌, 江西</p>
-                <p>
-                  <b>专业-学位: </b>软件工程-本科学士
-                  <br>
-                  <b>CGPA: </b>3.5/4.0
-                </p>
-
-                <ul>
-                  <p>
-                    <b>相关课程:</b>
-                  <ul>
-                    <li>数据结构</li>
-                    <li>软件工程</li>
-                    <li>软件测试</li>
-                  </ul>
-                  </p>
-
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Eight Section: Contact -->
-    <section id="contact" class="section scrollspy full-height">
-      <h3 class="page-title white-text teal">Contact</h3>
-      <div class="container">
-        <p>
-          <a aria-label="Call Varad" data-position="top" data-tooltip="Call Varad"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
-              aria-label="Call Varad">+86 17191082067</a></a>
-        </p>
-        <p>
-          <a aria-label="Email Varad" href="mailto:vbhogayata@gmail.com" target="_blank" data-position="top"
-            data-tooltip="Email Varad" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-envelope"></i><a aria-label="Email Varad" href="mailto:vbhogayata@gmail.com"
-              class="hoverline">xiaoyaozuel@gmail.com</a></a>
-        </p>
-        <p>
-          <a aria-label="View Varad on GitHub" href="https://github.com/yaoxiao-cs" target="_blank"
-            data-position="top" data-tooltip="View Varad on GitHub"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
-              aria-label="Varad on Github" href="https://github.com/yaoxiao-cs" class="hoverline"
-              target="_blank">https://github.com/yaoxiao-cs</a></a>
-        </p>
-        <p>
-          <a aria-label="View Varad on LinkedIn" href="https://x.com/xiaoyao65391263" target="_blank"
-            data-position="top" data-tooltip="View Varad on LinkedIn"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-twitter"></i><a aria-label="Varad on LinkedIn" href="https://x.com/xiaoyao65391263"
-              class="hoverline" target="_blank">https://x.com/xiaoyao65391263</a></a>
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <!-- typed.js -->
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing',{
-      strings: ["Pythonist", "Machine Learning Learner", "Data Science enthusiast"],
-      loop: true,
-      typeSpeed: 80,
-      backSpeed: 40
-    });
-  </script>
-
-
-  <!-- jQuery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-  <!-- Materialize - Compiled and minified JavaScript-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
-  <script>
-    // Materialize - Initializers
-    $(document).ready(function () {
-      $(".scrollspy").scrollSpy()
-      // Initialize collapse button
-      $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      })
-    })
-  </script>
-
-  <p><center>
-    <div id="clustrmaps-widget" style="width:10%">
-      <!--script type="text/javascript" id="clstr_globe" src="//cdn.clustrmaps.com/globe.js?d=va-L6lHdAAU-pnGRWuo4n-3yc0GsyFLqhzS0NLNX8Lk"></script-->
-      <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=kwyKHhpjCtY5a_is1PxJMuWOPYj_x8IohZ5TYKJekRQ"></script>
-  <noscript><a href='https://clustrmaps.com/site/1c1nd'  title='Visit tracker'><img src='//www.clustrmaps.com/map_v2.png?d=kwyKHhpjCtY5a_is1PxJMuWOPYj_x8IohZ5TYKJekRQ&cl=ffffff'/></a></noscript>
-
-  </div>        
-  <br>
-    &copy; Yao Xiao | Last updated: Oct 2024
-
-  </center></p>
-</body>
-
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
 </html>
